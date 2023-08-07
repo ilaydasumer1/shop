@@ -1,38 +1,227 @@
-.App {
-  text-align: center;
+.product-and-category{
+display: flex;
+flex-direction: row;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.category{
+  display:flex;
+  flex-direction: column;
+  margin-top: 200px;
+  margin-left: 100px;
+  position:relative;
+  bottom:300px;
+  right:40px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.category-of-title{
+  color:#FF4500;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.price{
+  display:flex;
+  flex-direction: column;
+  margin-left: 100px;
+  position:relative;
+  bottom:300px;
+  right:40px;
+}
+.color{
+  display:flex;
+  flex-direction: column;
+  margin-left: 100px;
+  position:relative;
+  bottom:300px;
+  right:40px;
+}
+.product-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 200px 0 0 100px; /* 200px spacing on the left and top */
+  position: relative;
+  bottom:180px;
+}
+.product-card {
+  width: calc(19% - 20px); /* 20% width for each product with 20px gap */
   display: flex;
   flex-direction: column;
-  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  padding: 10px;
+  border: 1px solid 	#DCDCDC;
+  border-radius: 5px;
+  max-height: min-content;
+}
+
+.img-container {
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.product-img {
+  width: 100%;
+  max-height: 200px;
+  object-fit: contain;
+}
+
+.products-of-title{
+padding-top: 10px;
+padding-bottom: 10px;
+font-family:Courier New, Courier, monospace;
+color:grey;
+opacity: 1;
+transition: opacity 2s;
+}
+.product-card:hover .products-of-title{
+  opacity: 1;
+  color: black;
+
+}
+.product-card{
+transform: scale(1);
+transition: all 1s;
+}
+.product-card:hover{
+  transform: scale(1.1);
+}
+
+h5 {
+  margin: 10px 0;
+  text-align: center;
+
+}
+
+.icon-and-reviews {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color:grey;
+}
+
+.icon {
+  display: flex;
+}
+
+.product-reviews {
+  margin: 0;
+}
+
+.price-and-icon {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.product-price {
+  margin: 0;
+  font-weight: bold;
+}
+
+.icon-2 {
+  display: flex;
+}
+
+/* Optional: Style the icons */
+.rating-star {
+  color: gold;
+  font-size: 16px;
+}
+
+/* Optional: Style the basket icon */
+.product-basket {
+  color: green;
+  font-size: 24px;
+}
+.category-button{
+  background-color: white;
+  border:none;
+  justify-content:right; 
+  opacity: 1;
+}
+.category-button:hover{
+  opacity: 0.8;
+  color:#FF4500;
+}
+.header{
+  display :flex;
+  flex-direction: column;
+  margin-top: 0;
+  align-items: center;
+}
+.icon-of-header{
+  padding-left: 1400px;
+  font-size:25px;
+  position: relative;
+  bottom:30px;
+
+}
+.main-input{
+position: relative;
+left:300px;
+top:15px;
+padding:10px 10px;
+background-color:	#F0F0F0;
+border-color: 	#F0F0F0;
+border-radius: 5px;
+}
+
+.shop-icon-of-header{
+  padding-left:50px;
+  font-size: 25px;
+  position: relative;
+  left:50px;
+}
+.hr-of-header{
+position: relative;
+bottom: 20px;
+
+}  
+.hr-of-header-2{
+  transform: rotate(90deg);
+  position: relative;
+  right: 520px;
+}  
+.category-button {
+  background-color: white;
+  padding: 5px 10px;
+  margin: 2px;
+  border-radius: 3px;
+  cursor: pointer;
+  display: flex;
+  width: 100%;
+  height: auto;
+  flex-direction: column;
+}
+
+
+.category-button.active {
+  background-color: #007bff;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.baslik{
+  color:	#696969;
+}
+.header-of-recomended{
+  position: relative;
+  left:280px;
+  bottom:20px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color:#FF4500;
+}
+.buttons-of-header{
+  position: relative;
+  left:280px;
+  bottom: 20px;
+}
+.button-of-header{
+  margin:0px 3px;
+  background-color:#FF4500;
+  padding:8px 8px;
+  border:2px solid white;
+  color:	white;
+  border-radius: 5px;
+  
+  
+}
+.all-icon-at-header{
+  color:#3CB371;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
